@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ma boutique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+    <h1>Ma boutique</h1>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Produits</a>
+        <a href="#">Contact</a>
+        <span id="panier">🛒 Panier: <b id="count">0</b></span>
+    </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+    <h2>Bienvenue dans notre catalogue</h2>
+    <p>Du matériel informatique au meilleur prix</p>
+    <a href="#produits" class="btn">Voir les produits</a>
+    </section>
+
+    <!-- Produits -->
+    <section id="produits" class="produits">
+    <div class="card">
+        <div class="image bleu">C</div>
+        <h3>Casque</h3>
+        <p class="prix">250 DH</p>
+        <button onclick="ajouter('Casque')">Ajouter</button>
+    </div>
+
+    <div class="card">
+        <div class="image orange">K</div>
+        <h3>Clavier</h3>
+        <p class="prix">180 DH</p>
+        <button onclick="ajouter('Clavier')">Ajouter</button>
+    </div>
+
+    <div class="card">
+        <div class="image jaune">S</div>
+        <h3>Souris</h3>
+        <p class="prix">90 DH</p>
+        <button onclick="ajouter('Souris')">Ajouter</button>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+    <p>© 2026 Ma boutique • Module Front-end</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
